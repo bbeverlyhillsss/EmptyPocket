@@ -66,7 +66,7 @@
               Control your cash before it controls you.
             </p>
             <div class="flex items-center gap-10 pt-4">
-              <!-- кнопки через роуты функциональные -->
+
               <button
                 class="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity"
               >
@@ -80,7 +80,7 @@
             </div>
           </div>
         </section>
-        <!-- карта скрол листа  -->
+
         <section class="lg:col-span-2">
           <div
             class="bg-card border-2 border-dashed border-border h-[400px] rounded-xl flex flex-col items-center justify-center p-10 text-canter group hover:border-primary transition-colors"
