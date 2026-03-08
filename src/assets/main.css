@@ -1,4 +1,3 @@
-@import 'tailwindcss';
 
 @import "tailwindcss";
 
@@ -7,69 +6,34 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Твоя кастомна палітра */
-  --color-background: #2C1320;    /* Midnight Violet - фон */
-  --color-foreground: #A7ADC6;    /* Lavender Grey - основний текст */
-
-  --color-primary: #5F4B66;       /* Vintage Grape - кнопки та акценти */
+  /* Твоя ОНОВЛЕНА світла палітра */
+  
+  /* Чистий світлий фон */
+  --color-background: #f8fafc;        /* Slate 50 */
+  /* Твій темний violet тепер колір тексту для контрасту */
+  --color-foreground: #2C1320;        /* Midnight Violet */
+  
+  /* Трохи темніший фон для карток */
+  --color-card: #f1f5f9;              /* Slate 100 */
+  --color-card-foreground: #2C1320;   /* Midnight Violet */
+  
+  /* Твій улюблений Grape тепер головний колір акцентів */
+  --color-primary: #5F4B66;            /* Vintage Grape */
   --color-primary-foreground: #FFFFFF;
+  
+  /* Світло-лавандовий для другорядних елементів */
+  --color-secondary: #A7ADC6;          /* Lavender Grey */
+  --color-secondary-foreground: #2C1320;
+  
+  /* Інші налаштування shadcn */
+  --color-border: #A7ADC6;
+  --color-input: #A7ADC6;
+  --color-ring: #5F4B66;               /* Vintage Grape */
 
-  --color-secondary: #56667A;     /* Blue Slate - другорядні елементи */
-  --color-secondary-foreground: #A7ADC6;
-
-  --color-muted: #56667A;
-  --color-muted-foreground: #8797AF;
-
-  --color-accent: #8797AF;
-  --color-accent-foreground: #2C1320;
-
-  --color-border: #5F4B66;
-  --color-input: #56667A;
-  --color-ring: #A7ADC6;
-
-  /* Радіуси для shadcn */
-  --radius-xl: 1rem;
+  /* Не забудь про радіуси для компонентів */
   --radius-lg: 0.75rem;
   --radius-md: 0.5rem;
   --radius-sm: 0.25rem;
-}
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
