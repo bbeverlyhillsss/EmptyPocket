@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "path": "EmptyPocket-FrontEnd" },
+    { "path": "EmptyPocket-BackEnd" }
+  ],
+  "settings": {
+    "typescript.tsdk": "EmptyPocket-FrontEnd/node_modules/typescript/lib"
+  }
+}
