@@ -1,1 +1,0 @@
-console.log("EmptyPocket API: Standing by. Waiting for some real code...");
