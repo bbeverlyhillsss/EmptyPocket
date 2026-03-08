@@ -46,18 +46,18 @@
             </a>
           </li>
         </ul>
-
+<!-- make a profile page -->
         <div>
           <p>sign in sign up</p>
         </div>
       </nav>
     </header>
-    <main class="container mx-auto px-4 py-12">
+    <main class="container mx-auto px-4 py-30 py-12">
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
         <section class="lg:col-span-3 space-y-6">
           <div class="bg-card border border-border p-8 rounded-xl shadow-sm">
             <h1 class="text-4xl font-black tracking-tight mb-4">
-              EmptyPocket: <br />
+              EmptyPocket <br />
               <span class="text-3xl">Stop wondering where it all went.</span>
             </h1>
             <p class="text-lg text-muted-foreground leaded-relaxed max-w-2xl">
@@ -80,7 +80,7 @@
             </div>
           </div>
         </section>
-        <!--  -->
+        <!-- карта скрол листа  -->
         <section class="lg:col-span-2">
           <div
             class="bg-card border-2 border-dashed border-border h-[400px] rounded-xl flex flex-col items-center justify-center p-10 text-canter group hover:border-primary transition-colors"
@@ -97,6 +97,7 @@
         </section>
       </div>
     </main>
+    
   </div>
 </template>
 
