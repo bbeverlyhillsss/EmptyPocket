@@ -82,18 +82,19 @@
               >
                 Start Counting
               </button>
-                            <a
-                href="#what-we-provide"
-                class="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity"
-              >
-                What do we provide?
-              </a>
               <a
                 href="#how-it-works"
                 class="border border-border px-6 py-3 rounded-lg font-bold text-foreground transition-colors hover:bg-secondary inline-flex items-center justify-center"
               >
                 How it works?
               </a>
+                            <a
+                href="#what-we-provide"
+                class="border border-border px-6 py-3 rounded-lg font-bold text-foreground transition-colors hover:bg-secondary inline-flex items-center justify-center"
+              >
+                What do we provide?
+              </a>
+              
             </div>
           </div>
         </section>
