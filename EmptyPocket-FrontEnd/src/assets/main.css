@@ -6,31 +6,31 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Твоя ОНОВЛЕНА світла палітра */
   
-  /* Чистий світлий фон */
-  --color-background: #f8fafc;        /* Slate 50 */
-  /* Твій темний violet тепер колір тексту для контрасту */
-  --color-foreground: #2C1320;        /* Midnight Violet */
   
-  /* Трохи темніший фон для карток */
-  --color-card: #f1f5f9;              /* Slate 100 */
-  --color-card-foreground: #2C1320;   /* Midnight Violet */
+ 
+  --color-background: #f8fafc;        
+ 
+  --color-foreground: #2C1320;       
   
-  /* Твій улюблений Grape тепер головний колір акцентів */
-  --color-primary: #5F4B66;            /* Vintage Grape */
+
+  --color-card: #f1f5f9;              
+  --color-card-foreground: #2C1320;   
+  
+  
+  --color-primary: #5F4B66;           
   --color-primary-foreground: #FFFFFF;
   
-  /* Світло-лавандовий для другорядних елементів */
-  --color-secondary: #A7ADC6;          /* Lavender Grey */
+
+  --color-secondary: #A7ADC6;         
   --color-secondary-foreground: #2C1320;
   
-  /* Інші налаштування shadcn */
+
   --color-border: #A7ADC6;
   --color-input: #A7ADC6;
-  --color-ring: #5F4B66;               /* Vintage Grape */
+  --color-ring: #5F4B66;            
 
-  /* Не забудь про радіуси для компонентів */
+
   --radius-lg: 0.75rem;
   --radius-md: 0.5rem;
   --radius-sm: 0.25rem;
