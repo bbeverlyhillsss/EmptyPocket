@@ -1,5 +1,4 @@
 <template>
-
   <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
     <nav class="container mx-auto px-4 h-16 flex items-center justify-between">
       
@@ -26,34 +25,17 @@
       </div>
 
       <ul class="hidden md:flex items-center gap-2">
-        <li>
+        <li v-for="item in headerNavigation" :key="item.routeName">
           <router-link
-            :to="{ name: 'MainTable' }"
+            :to="{ name: item.routeName }"
             class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded-md transition-all group"
             active-class="bg-secondary text-primary"
           >
-            <TableCellsIcon class="size-5 group-hover:text-primary transition-colors" />
-            <span>Main Table</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link
-            :to="{ name: 'Debtors' }"
-            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded-md transition-all group"
-            active-class="bg-secondary text-primary"
-          >
-            <UserGroupIcon class="size-5 group-hover:text-primary transition-colors" />
-            <span>Debtors</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link
-            :to="{ name: 'Calculations' }"
-            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded-md transition-all group"
-            active-class="bg-secondary text-primary"
-          >
-            <CalculatorIcon class="size-5 group-hover:text-primary transition-colors" />
-            <span>Calculations</span>
+            <component 
+              :is="item.icon" 
+              class="size-5 group-hover:text-primary transition-colors" 
+            />
+            <span>{{ item.name }}</span>
           </router-link>
         </li>
       </ul>
@@ -75,18 +57,13 @@
 
     </nav>
   </header> 
-
 </template>
 
 
 <script setup lang=ts> 
 import { ref } from 'vue'
-import {
-  BanknotesIcon,
-  TableCellsIcon,
-  UserGroupIcon,
-  CalculatorIcon,
-} from '@heroicons/vue/24/outline'
+import { headerNavigation } from '@/constants/navigation'
+import { BanknotesIcon } from '@heroicons/vue/24/outline'
 
 const accumulation = ref<number>(12540)
 
