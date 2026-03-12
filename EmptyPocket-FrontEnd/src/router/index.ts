@@ -45,18 +45,17 @@ const router = createRouter({
 // router.beforeEach((to, from, next) => {
 //   const isProtected = to.matched.some(record => record.meta.requiresAuth)
   
-//   // Жорстка заглушка: зараз додаток думає, що юзер НЕ авторизований.
-//   // Потім ми замінимо це на реальну перевірку токена чи даних з Pinia.
+
 //   const isAuthenticated = false 
 
 //   if (isProtected && !isAuthenticated) {
-//     // Спроба зайти без реєстрації? Відправляємо на сторінку логіну.
+
 //     next('/login')
 //   } else if ((to.path === '/login' || to.path === '/register') && isAuthenticated) {
-//     // Вже залогінений, але лізе на форму реєстрації? Кидаємо в його таблицю.
+
 //     next('/table')
 //   } else {
-//     // В усіх інших випадках — нехай іде.
+
 //     next()
 //   }
 // })
